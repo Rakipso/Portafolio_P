@@ -32,14 +32,14 @@ export const experiences = [
     empresa: 'Servicios Independientes',
     cargo: 'Soporte Técnico de Hardware',
     fechaInicio: '2024',
-    fechaTermino: '2024'
+    fechaTermino: 'Presente'
   },
   {
     id: 3,
     empresa: 'Edificio Residencial',
     cargo: 'Conserjería y Monitoreo de Seguridad (CCTV)',
-    fechaInicio: 'Enero 2023',
-    fechaTermino: 'Presente'
+    fechaInicio: 'Enero 2026',
+    fechaTermino: 'Febrero 2026'
   }
 ];
 
