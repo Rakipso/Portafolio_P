@@ -1,76 +1,106 @@
-🚀 Portafolio Personal - Single Page Application (SPA)
+# 🚀 Portafolio Personal — Single Page Application (SPA)
 
-Este proyecto es una aplicación web interactiva tipo "Portafolio Personal" desarrollada con React y empaquetada con Vite.
+Este proyecto consiste en una aplicación web interactiva de tipo **portafolio personal**, desarrollada con React y Vite.
 
-El objetivo principal de este desarrollo es demostrar el dominio en la creación de interfaces funcionales, manejo de estado mediante Hooks, y la implementación estricta de metodologías de estructuración de código y buenas prácticas.
+Su objetivo es presentar información personal, experiencia, formación académica y proyectos destacados, aplicando buenas prácticas de desarrollo Front-End, reutilización de componentes y manejo del estado mediante React Hooks.
 
-📐 Arquitectura y Tecnologías
+## 📐 Arquitectura y tecnologías
 
-Para garantizar un código limpio, escalable y libre de componentes monolíticos, este proyecto fue estructurado bajo la metodología Atomic Design:
+El proyecto utiliza la metodología **Atomic Design** para organizar los componentes en una estructura modular y facilitar su reutilización y mantenimiento.
 
-Átomos: Componentes UI básicos (Botones, Inputs, Textos).
+### Estructura de componentes
 
-Moléculas: Agrupaciones simples con responsabilidad única (Tarjetas de información, Campos de formulario).
+- **Átomos:** componentes básicos de la interfaz, como botones y títulos de sección.
+- **Moléculas:** agrupaciones de componentes que cumplen una función específica, como tarjetas de información y tarjetas de proyectos.
+- **Organismos:** secciones funcionales más complejas, como la sección de experiencia, la grilla de proyectos y el formulario de contacto.
+- **Plantillas:** estructuras que definen la disposición general del contenido de la aplicación.
 
-Organismos: Secciones complejas que manejan su propio estado y lógica (Formulario de contacto, Grilla de proyectos).
+### Stack tecnológico
 
-Stack Tecnológico:
+- **Frontend:** React y JavaScript (JSX).
+- **Herramienta de desarrollo y construcción:** Vite.
+- **Estilos e interfaz:** Bootstrap 5 y CSS.
+- **Manejo del estado:** React Hooks, como `useState` y `useEffect`.
+- **Pruebas automatizadas:** Vitest y React Testing Library.
 
-Frontend: React (JS/JSX).
+## ⚙️ Instalación y ejecución
 
-Build Tool: Vite (para un entorno de desarrollo rápido y optimizado).
+Sigue estos pasos para instalar las dependencias y ejecutar el proyecto en tu entorno local.
 
-Estilos y UI: Bootstrap (garantizando un diseño responsivo y consistente en toda la aplicación).
+### 1. Prerrequisitos
 
-Testing: Jest y React Testing Library.
+Asegúrate de tener instalado:
 
-⚙️ Instrucciones para el Evaluador (Instalación y Ejecución)
+- Node.js 20.19 o superior, o Node.js 22.12 o superior.
+- Git.
+- npm, incluido con Node.js.
 
-Sigue estos pasos para instalar las dependencias y levantar el proyecto en tu entorno local.
+### 2. Clonar el repositorio
 
-1. Prerrequisitos
+Abre una terminal y ejecuta:
 
-Asegúrate de tener instalado en tu máquina local:
+```bash
+git clone https://github.com/Rakipso/Portafolio_P.git
+```
 
-Node.js (Se recomienda versión 18+ LTS).
+### 3. Ingresar al directorio del proyecto
 
-Git.
+```bash
+cd Portafolio_P
+```
 
-2. Clonar el repositorio
+### 4. Instalar las dependencias
 
-Abre tu terminal de preferencia y ejecuta el siguiente comando para clonar el proyecto:
+Ejecuta el siguiente comando para instalar las dependencias definidas en `package.json`:
 
-git clone <AQUI_LA_URL_DE_TU_REPOSITORIO>
-
-
-3. Navegar al directorio del proyecto
-
-cd <mi-Portfolio>
-
-
-4. Instalar las dependencias
-
-Una vez dentro de la carpeta del proyecto, ejecuta el siguiente comando para instalar todas las dependencias necesarias definidas en el package.json:
-
+```bash
 npm install
+```
 
+### 5. Ejecutar la aplicación
 
-5. Levantar el proyecto en entorno local
+Inicia el servidor de desarrollo con:
 
-Para iniciar el servidor de desarrollo utilizando Vite, ejecuta:
-
+```bash
 npm run dev
+```
 
+Vite mostrará en la terminal la dirección local de la aplicación. Habitualmente es `http://localhost:5173/`. Abre esa dirección en tu navegador.
 
-Nota: Al finalizar la ejecución, la terminal te indicará la ruta local donde se está ejecutando la aplicación (usualmente es http://localhost:5173/). Abre ese enlace en tu navegador.
+## 🧪 Pruebas automatizadas
 
-🧪 Pruebas Automatizadas (Testing)
+El proyecto incluye pruebas para el formulario de contacto mediante Vitest y React Testing Library. Estas verifican el renderizado de los campos, la validación de los datos ingresados, los mensajes de error y el comportamiento posterior al envío de información válida.
 
-Este proyecto incluye una suite de pruebas automatizadas enfocadas en el comportamiento de los componentes críticos y el manejo de estado (como el Formulario de Contacto).
+Para ejecutar las pruebas una sola vez, utiliza:
 
-Para ejecutar las pruebas y visualizar los resultados, utiliza el siguiente comando en la terminal:
+```bash
+npm test -- --run
+```
 
-npm test
+También puedes ejecutar `npm test` para iniciar Vitest en modo interactivo.
 
+## 🏗️ Construcción para producción
+
+Para generar la versión optimizada de la aplicación, ejecuta:
+
+```bash
+npm run build
+```
+
+El resultado se generará en la carpeta `dist/`.
+
+Para previsualizar la versión construida localmente, utiliza:
+
+```bash
+npm run preview
+```
+
+## 🌐 Demo
+
+Puedes revisar la versión desplegada del portafolio aquí:
+
+https://portafolio-omega-eight-27.vercel.app/
+
+---
 
 Desarrollado como proyecto de evaluación de Desarrollo Front-End.
